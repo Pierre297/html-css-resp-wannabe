@@ -72,6 +72,33 @@ img {
   clear: both;
 }
 
+/* BONUS TABLET LAYOUT */
+
+@media all and (max-width: 768px) {
+  .row {
+    width: 100%;
+  }
+
+  .row h1 {
+    margin-bottom: 60px;
+  }
+  #lezioni .row > .left,
+  #lezioni .row > .right {
+    width: 50%;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    width: 50%;
+  }
+
+  #steps .row > .right {
+    margin-left: 188px;
+    margin-top: 50px;
+  }
+}
+
 /* MEDIA QUERY */
 
 @media all and (max-width: 420px) {
@@ -81,11 +108,17 @@ img {
   #lezioni .row > .left,
   #lezioni .row > .right {
     width: 100%;
+    margin-top: 30px;
   }
 
   #steps .row > .left,
   #steps .row > .central,
   #steps .row > .right {
     width: 100%;
+    margin-top: 30px;
+  }
+
+  #steps .row > .right {
+    margin-left: 0px;
   }
 }
